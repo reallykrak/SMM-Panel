@@ -1,0 +1,31 @@
+.section { position: relative; z-index: 1; padding: 50px 1.5rem; max-width: 1200px; margin: 0 auto; }
+.section.no-top { padding-top: 0; }
+.section-header { margin-bottom: 36px; }
+.section-tag { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 0.7rem; }
+.section-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(1.8rem, 5vw, 3rem); letter-spacing: 2px; line-height: 1; }
+
+.features-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.2rem; }
+.feature-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 24px 20px; transition: border-color .2s; }
+.feature-card:hover { border-color: rgba(29,114,232,0.4); }
+.feature-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 14px; }
+.fi-red { background: rgba(230,57,70,0.12); }
+.fi-blue { background: rgba(29,114,232,0.12); }
+.fi-gold { background: rgba(244,196,48,0.12); }
+.fi-green { background: rgba(34,197,94,0.12); }
+.feature-title { font-weight: 700; font-size: 0.92rem; margin-bottom: 6px; }
+.feature-text { font-size: 0.78rem; color: var(--muted); line-height: 1.6; }
+
+.how-steps { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.2rem; counter-reset: steps; }
+.step-card { position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 28px 22px; counter-increment: steps; }
+.step-card::before { content: counter(steps, decimal-leading-zero); font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: rgba(230,57,70,0.1); position: absolute; top: 12px; right: 16px; line-height: 1; }
+.step-title { font-weight: 700; font-size: 0.92rem; margin-bottom: 8px; }
+.step-text { font-size: 0.78rem; color: var(--muted); line-height: 1.6; }
+
+.testimonials { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.2rem; }
+.testi-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 22px; }
+.testi-stars { color: var(--gold); font-size: 0.82rem; margin-bottom: 10px; }
+.testi-text { font-size: 0.82rem; color: var(--muted); line-height: 1.65; margin-bottom: 14px; font-style: italic; }
+.testi-author { display: flex; align-items: center; gap: 10px; }
+.testi-avatar { width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--blue)); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.8rem; color: #fff; flex-shrink: 0; }
+.testi-name { font-weight: 700; font-size: 0.82rem; }
+.testi-handle { font-size: 0.7rem; color: var(--muted); }

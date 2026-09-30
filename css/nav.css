@@ -1,0 +1,30 @@
+.ticker { background: var(--surface); border-bottom: 1px solid var(--border); padding: 7px 0; overflow: hidden; }
+.ticker-inner { display: flex; animation: ticker 28s linear infinite; white-space: nowrap; }
+.ticker-item { display: flex; align-items: center; gap: 6px; padding: 0 2rem; font-size: 0.73rem; color: var(--muted); }
+.ticker-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+.ticker-highlight { color: var(--gold); font-weight: 600; }
+
+nav { position: sticky; top: 0; z-index: 1000; background: rgba(9,12,18,0.95); backdrop-filter: blur(18px); border-bottom: 1px solid var(--border); padding: 0 1.5rem; height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
+.nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
+.logo-icon { width: 36px; height: 36px; background: linear-gradient(135deg, var(--accent), var(--accent2)); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue', sans-serif; font-size: 20px; color: #fff; box-shadow: 0 0 18px var(--glow); }
+.logo-text { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 2px; color: #fff; }
+.logo-text span { color: var(--accent); }
+.nav-right { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; }
+.balance-badge { display: flex; align-items: center; gap: 6px; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 5px 10px; font-size: 0.78rem; font-weight: 600; color: var(--gold); cursor: pointer; transition: all .2s; white-space: nowrap; }
+.balance-badge:hover { border-color: var(--gold); }
+
+.user-menu-wrap { position: relative; }
+.user-btn { display: flex; align-items: center; gap: 8px; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px; cursor: pointer; transition: all .2s; color: var(--text); font-family: 'Outfit', sans-serif; font-size: 0.82rem; font-weight: 600; }
+.user-btn:hover { border-color: var(--accent); }
+.user-avatar { width: 28px; height: 28px; background: linear-gradient(135deg, var(--accent), var(--blue)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 800; color: #fff; flex-shrink: 0; }
+.user-name { max-width: 90px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.user-dropdown { display: none; position: absolute; top: calc(100% + 8px); right: 0; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 8px; min-width: 180px; box-shadow: 0 16px 40px rgba(0,0,0,0.5); z-index: 999; animation: scaleIn .2s ease; }
+.user-dropdown.open { display: block; }
+.dropdown-item { display: block; padding: 9px 12px; border-radius: 8px; font-size: 0.82rem; font-weight: 600; color: var(--muted); cursor: pointer; transition: all .15s; text-decoration: none; }
+.dropdown-item:hover { background: var(--surface2); color: var(--text); }
+.dropdown-divider { height: 1px; background: var(--border); margin: 6px 0; }
+.dropdown-item.logout { color: var(--accent); }
+.dropdown-item.logout:hover { background: rgba(230,57,70,0.1); color: var(--accent); }
+.dropdown-user-info { padding: 10px 12px 6px; }
+.dropdown-user-info .dui-name { font-weight: 700; font-size: 0.9rem; color: var(--text); }
+.dropdown-user-info .dui-email { font-size: 0.72rem; color: var(--muted); margin-top: 2px; }

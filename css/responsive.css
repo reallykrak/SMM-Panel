@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+  .stats-bar .stat-item { border-right: none; border-bottom: 1px solid var(--border); flex: 0 0 50%; }
+  .stats-bar .stat-item:nth-child(2n) { border-right: none; }
+  .stats-bar .stat-item:nth-last-child(-n+2) { border-bottom: none; }
+  .order-card-body { padding: 22px 18px; }
+  .order-card-header { padding: 22px 18px; }
+  .order-features { grid-template-columns: 1fr; }
+  .modal { padding: 28px 20px; }
+  .logo-text { font-size: 15px; letter-spacing: 1px; }
+  .balance-badge { padding: 5px 8px; font-size: 0.74rem; }
+  .btn { padding: 7px 11px; font-size: 0.78rem; }
+}
+@media (max-width: 480px) {
+  .footer-inner { grid-template-columns: 1fr; }
+  .hero { padding: 50px 1rem 40px; }
+  .hero h1 { font-size: 2.4rem; }
+  .stats-bar .stat-item { flex: 0 0 100%; border-bottom: 1px solid var(--border); }
+  .stats-bar .stat-item:last-child { border-bottom: none; }
+  .user-name { display: none; }
+}
