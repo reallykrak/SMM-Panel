@@ -3,370 +3,243 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZeroDijitalMarket – Instagram Beğeni Hizmetleri</title>
+<title>ZeroMarketTR – Dijital Hizmetler & Sosyal Medya</title>
+<meta name="description" content="ZeroMarketTR: Instagram, TikTok, YouTube ve X için sosyal medya hizmetleri ve SMS onay numaraları.">
+<meta name="theme-color" content="#060608">
+<link rel="icon" href="assets/z-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/nav.css">
-<link rel="stylesheet" href="css/hero.css">
-<link rel="stylesheet" href="css/order.css">
-<link rel="stylesheet" href="css/sections.css">
-<link rel="stylesheet" href="css/modal.css">
-<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
+<!-- İKON SETİ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M2.5 17a24.1 24.1 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.6 49.6 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.1 24.1 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.6 49.6 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M4 4h4l12 16h-4z"/><path d="M4 20l6.5-7.5M13.5 10.5 20 4"/></symbol>
+  <symbol id="i-sms" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/><path d="M9.5 8h5M9.5 11h3"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.500c0 2.3 1.5 4 3 5.500l7 7Z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.7 9a1 1 0 0 1-.7 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.2-2.700a1.2 1.2 0 0 1 1.5 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20.6 13.4 13.4 20.600a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.600a2 2 0 0 1 0 2.800z"/><path d="M7 7h.01"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></symbol>
+  <symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7M12 2 3 7h18z"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></symbol>
+  <symbol id="i-logout" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+</svg>
+
 <div class="toast-container" id="toastContainer"></div>
 
-<div class="ticker">
-  <div class="ticker-inner">
-    <div class="ticker-item"><span class="ticker-dot"></span> <span class="ticker-highlight">@kullanici_123</span> 5.000 Instagram Beğeni satın aldı</div>
-    <div class="ticker-item"><span class="ticker-dot"></span> <span class="ticker-highlight">@marka_xyz</span> 1.000 Instagram Beğeni satın aldı</div>
-    <div class="ticker-item"><span class="ticker-dot"></span> <span class="ticker-highlight">@dijital_dev</span> 500 Instagram Beğeni satın aldı</div>
-    <div class="ticker-item"><span class="ticker-dot"></span> <span class="ticker-highlight">@influencer_tr</span> 2.000 Instagram Beğeni satın aldı</div>
-    <div class="ticker-item"><span class="ticker-dot"></span> <span class="ticker-highlight">@shop_store</span> 750 Instagram Beğeni satın aldı</div>
-    <div class="ticker-item"><span class="ticker-dot"></span> <span class="ticker-highlight">@content_maker</span> 3.000 Instagram Beğeni satın aldı</div>
-    <div class="ticker-item"><span class="ticker-dot"></span> <span class="ticker-highlight">@kullanici_123</span> 5.000 Instagram Beğeni satın aldı</div>
-    <div class="ticker-item"><span class="ticker-dot"></span> <span class="ticker-highlight">@marka_xyz</span> 1.000 Instagram Beğeni satın aldı</div>
-    <div class="ticker-item"><span class="ticker-dot"></span> <span class="ticker-highlight">@dijital_dev</span> 500 Instagram Beğeni satın aldı</div>
-    <div class="ticker-item"><span class="ticker-dot"></span> <span class="ticker-highlight">@influencer_tr</span> 2.000 Instagram Beğeni satın aldı</div>
-    <div class="ticker-item"><span class="ticker-dot"></span> <span class="ticker-highlight">@shop_store</span> 750 Instagram Beğeni satın aldı</div>
-    <div class="ticker-item"><span class="ticker-dot"></span> <span class="ticker-highlight">@content_maker</span> 3.000 Instagram Beğeni satın aldı</div>
+<header class="topbar">
+  <div class="container bar">
+    <a class="brand" href="#/"><img src="assets/z-mark.png" alt="ZeroMarketTR"><span>ZeroMarket<em>TR</em></span></a>
+    <nav class="links" id="navLinks">
+      <a href="#/" data-nav="home">Ana Sayfa</a>
+      <a href="#/siparis" data-nav="siparis">Yeni Sipariş</a>
+      <a href="#/servisler" data-nav="servisler">Servisler</a>
+      <a href="#/sms" data-nav="sms">SMS Onay</a>
+      <a href="#/bakiye" data-nav="bakiye">Bakiye Yükle</a>
+      <a href="#/gecmis" data-nav="gecmis">Siparişlerim</a>
+    </nav>
+    <div class="bar-right" id="navRight"></div>
+    <button class="burger" onclick="toggleMenu()" aria-label="Menü"><svg class="ic"><use href="#i-menu"/></svg></button>
   </div>
-</div>
+</header>
 
-<nav>
-  <a class="nav-logo" href="#">
-    <div class="logo-icon">Z</div>
-    <span class="logo-text">ZERO<span>DIJITAL</span>MARKET</span>
-  </a>
-  <div class="nav-right" id="navRight"></div>
-</nav>
+<main>
+<!-- ANA SAYFA -->
+<section class="view" data-view="home">
+  <div class="container">
+    <div class="hero">
+      <img class="hero-banner" src="assets/banner.jpg" alt="ZeroMarketTR – Dijital Hizmetler & Sosyal Medya">
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="#/siparis">Sipariş Ver</a>
+        <a class="btn btn-outline" href="#/sms">SMS Onay Numarası Al</a>
+      </div>
+    </div>
 
-<section class="hero" id="anasayfa">
-  <div class="hero-badge">
-    <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
-    Türkiye'nin #1 SMM Paneli
-  </div>
-  <h1>INSTAGRAM'DA<br><em>GÜÇLÜ OL</em></h1>
-  <p>Organik Türk kullanıcılardan gerçek, hızlı ve güvenilir Instagram beğeni hizmetleri. Saniyeler içinde sipariş ver.</p>
-  <div class="hero-cta">
-    <button class="btn btn-primary btn-hero" onclick="scrollToOrder()">Hemen Sipariş Ver →</button>
-    <button class="btn btn-outline btn-hero" onclick="openModal('auth'); switchTab('register')">Üye Ol</button>
+    <div class="section">
+      <h2 class="section-title">Platformlar</h2>
+      <p class="section-sub">Hizmet almak istediğiniz platformu seçin.</p>
+      <div class="platform-grid">
+        <div class="platform-card" onclick="goPlatform('instagram')"><svg class="ic"><use href="#i-instagram"/></svg><b>Instagram</b><small>Takipçi · Beğeni · İzlenme</small></div>
+        <div class="platform-card" onclick="goPlatform('tiktok')"><svg class="ic"><use href="#i-tiktok"/></svg><b>TikTok</b><small>Takipçi · Beğeni · İzlenme</small></div>
+        <div class="platform-card" onclick="goPlatform('youtube')"><svg class="ic"><use href="#i-youtube"/></svg><b>YouTube</b><small>İzlenme · Beğeni · Abone</small></div>
+        <div class="platform-card" onclick="goPlatform('x')"><svg class="ic"><use href="#i-x"/></svg><b>X (Twitter)</b><small>Takipçi · Beğeni</small></div>
+        <div class="platform-card" onclick="location.hash='#/sms'"><svg class="ic"><use href="#i-sms"/></svg><b>SMS Onay</b><small>Sanal numara hizmetleri</small></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Neden ZeroMarketTR?</h2>
+      <p class="section-sub">Hızlı, güvenli ve uygun fiyatlı dijital hizmetler.</p>
+      <div class="feature-grid">
+        <div class="card"><div class="fi"><svg class="ic"><use href="#i-bolt"/></svg></div><h3>Hızlı Teslimat</h3><p>Siparişleriniz otomatik sistemle kısa sürede işleme alınır.</p></div>
+        <div class="card"><div class="fi"><svg class="ic"><use href="#i-shield"/></svg></div><h3>Güvenli Ödeme</h3><p>Kart ödemeleri 3D Secure ile korunur, kart bilgileriniz sitemizde saklanmaz.</p></div>
+        <div class="card"><div class="fi"><svg class="ic"><use href="#i-tag"/></svg></div><h3>Uygun Fiyat</h3><p>Tüm servislerde rekabetçi ve şeffaf fiyatlandırma.</p></div>
+        <div class="card"><div class="fi"><svg class="ic"><use href="#i-headset"/></svg></div><h3>Destek</h3><p>Sorularınız için destek ekibimize WhatsApp veya Telegram üzerinden ulaşın.</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Nasıl Çalışır?</h2>
+      <p class="section-sub">4 adımda siparişinizi oluşturun.</p>
+      <div class="step-grid">
+        <div class="card"><div class="step-num">01</div><h3>Üye Ol</h3><p>E-posta ve şifrenizle hesabınızı oluşturun.</p></div>
+        <div class="card"><div class="step-num">02</div><h3>Bakiye Yükle</h3><p>Kart (3D Secure) veya Havale/EFT ile bakiye yükleyin.</p></div>
+        <div class="card"><div class="step-num">03</div><h3>Sipariş Ver</h3><p>Servisi seçin, linki girin, miktarı belirleyin.</p></div>
+        <div class="card"><div class="step-num">04</div><h3>Takip Et</h3><p>Siparişlerinizi "Siparişlerim" sayfasından izleyin.</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Sık Sorulan Sorular</h2>
+      <p class="section-sub">En çok merak edilenler.</p>
+      <div class="faq">
+        <details><summary>Bakiyem ne kadar sürede yüklenir?</summary><p>Kart ödemelerinde bakiye, ödeme onaylandığı anda otomatik yüklenir. Havale/EFT'de ödeme kontrol edildikten sonra eklenir; açıklama kısmına size verilen kodu yazmanız gerekir.</p></details>
+        <details><summary>Sipariş verirken nelere dikkat etmeliyim?</summary><p>Hesabınızın herkese açık olduğundan ve linkin doğru olduğundan emin olun. Sipariş başladıktan sonra link değiştirilemez.</p></details>
+        <details><summary>SMS Onay nedir?</summary><p>Uygulama ve sitelerde doğrulama için geçici numara alıp gelen SMS kodunu panelden görebileceğiniz hizmettir. Kod gelmezse numarayı iptal edip bakiyenizi iade alabilirsiniz.</p></details>
+        <details><summary>Servislerin sonucu garanti mi?</summary><p>Servis açıklamalarında belirtilen koşullar geçerlidir. Sosyal medya platformlarının kuralları ve işleyişi zamanla değişebilir; ayrıntılar için destek ekibimizle iletişime geçin.</p></details>
+      </div>
+    </div>
   </div>
 </section>
 
-<div class="section no-top">
-  <div class="stats-bar">
-    <div class="stat-item"><span class="stat-num red">2.4M+</span><span class="stat-label">Tamamlanan Sipariş</span></div>
-    <div class="stat-item"><span class="stat-num blue">98.7%</span><span class="stat-label">Müşteri Memnuniyeti</span></div>
-    <div class="stat-item"><span class="stat-num gold">7/24</span><span class="stat-label">Canlı Destek</span></div>
-    <div class="stat-item"><span class="stat-num green">3 Sn</span><span class="stat-label">Başlama Süresi</span></div>
-  </div>
-</div>
-
-<div class="order-section" id="siparis">
-  <div class="order-card">
-    <div class="order-card-header">
-      <div class="ig-icon">❤️</div>
-      <div class="order-card-header-text">
-        <h2>INSTAGRAM BEĞENİ</h2>
-        <p>Organik Türk Kullanıcılardan Gerçek Beğeni</p>
+<!-- YENİ SİPARİŞ -->
+<section class="view" data-view="siparis">
+  <div class="container">
+    <div class="page-head"><h1>Yeni Sipariş</h1><p>Platformu, kategoriyi ve servisi seçerek siparişinizi oluşturun.</p></div>
+    <div class="two-col">
+      <div class="panel">
+        <div class="tabs" id="orderTabs"></div>
+        <div class="field"><label class="lbl">Kategori</label><select class="input" id="catSelect" onchange="onCatChange()"></select></div>
+        <div class="field"><label class="lbl">Servis</label><select class="input" id="svcSelect" onchange="onSvcChange()"></select></div>
+        <div class="svc-info" id="svcInfo"></div>
+        <div class="field"><label class="lbl">Link</label><input class="input" id="orderLink" type="url" placeholder="https://"></div>
+        <div class="field"><label class="lbl">Miktar</label><input class="input" id="orderQty" type="number" inputmode="numeric" oninput="updateTotal()"><div class="hint" id="qtyHint"></div></div>
+        <div class="price-box"><span>Toplam Tutar</span><b id="orderTotal">₺0.00</b></div>
+        <button class="btn btn-gold btn-block" onclick="handleOrder()">Sipariş Ver</button>
       </div>
+      <aside class="panel side-balance">
+        <span class="lbl">Bakiyeniz</span>
+        <div class="amt" id="sideBalance">₺0.00</div>
+        <a class="btn btn-outline btn-block" href="#/bakiye">Bakiye Yükle</a>
+        <ul class="side-list">
+          <li><svg class="ic"><use href="#i-check"/></svg>Hesabınızın herkese açık olduğundan emin olun.</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Aynı linke, önceki sipariş bitmeden yeni sipariş vermeyin.</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Tutar, sipariş anında bakiyenizden düşülür.</li>
+        </ul>
+      </aside>
     </div>
-    <div class="order-card-body">
-      <div class="service-badge"><span>✓</span> Organik Instagram Türk Beğeni · 30 Gün Garantili</div>
+  </div>
+</section>
 
-      <div class="form-group">
-        <label class="form-label">Instagram Gönderi Linki <span>https://instagram.com/p/...</span></label>
-        <input class="form-input" type="url" id="postLink" placeholder="https://www.instagram.com/p/XXXXX/">
-      </div>
+<!-- SERVİSLER -->
+<section class="view" data-view="servisler">
+  <div class="container">
+    <div class="page-head"><h1>Servisler</h1><p>Tüm servisler ve 1000 adet fiyatları.</p></div>
+    <div class="tabs" id="svcTabs"></div>
+    <div class="table-wrap"><table class="tbl"><thead><tr><th>Servis</th><th>Kategori</th><th>1000 Adet</th><th>Min</th><th>Max</th><th></th></tr></thead><tbody id="svcTable"></tbody></table></div>
+  </div>
+</section>
 
-      <div class="form-group">
-        <label class="form-label">Beğeni Miktarı <span id="quantityDisplay">250 beğeni</span></label>
-        <div class="quantity-wrap">
-          <input class="form-input" type="number" id="quantityInput" value="250" min="1" max="1000" oninput="updateQuantity(this.value)">
-          <span class="quantity-hint">1 – 1000</span>
+<!-- SMS ONAY -->
+<section class="view" data-view="sms">
+  <div class="container">
+    <div class="page-head"><h1>SMS Onay</h1><p>Doğrulama için geçici numara alın, gelen kodu burada görün. Kod gelmezse iptal edip iade alın.</p></div>
+    <div class="panel sms-active" id="smsActive"></div>
+    <div class="sms-grid" id="smsGrid"></div>
+  </div>
+</section>
+
+<!-- BAKİYE -->
+<section class="view" data-view="bakiye">
+  <div class="container">
+    <div class="page-head"><h1>Bakiye Yükle</h1><p>Mevcut bakiyeniz: <b class="gold" id="topupBalance">₺0.00</b></p></div>
+    <div class="panel" style="max-width:640px">
+      <div id="payForm">
+        <label class="lbl">Tutar</label>
+        <div class="amounts">
+          <div class="amount-btn" onclick="selectAmount(50,this)">₺50</div><div class="amount-btn" onclick="selectAmount(100,this)">₺100</div><div class="amount-btn" onclick="selectAmount(200,this)">₺200</div>
+          <div class="amount-btn" onclick="selectAmount(500,this)">₺500</div><div class="amount-btn" onclick="selectAmount(1000,this)">₺1.000</div><div class="amount-btn" onclick="selectAmount(2000,this)">₺2.000</div>
         </div>
-        <input type="range" class="range-input" id="quantityRange" min="1" max="1000" value="250" oninput="updateQuantityFromRange(this.value)">
-        <div class="range-labels"><span>1</span><span>250</span><span>500</span><span>750</span><span>1000</span></div>
-      </div>
-
-      <div class="price-preview">
-        <div>
-          <div class="price-preview-label">Toplam Tutar</div>
-          <div class="price-preview-amount" id="totalPrice">₺0.48</div>
+        <div class="field"><input class="input" id="customAmount" type="number" inputmode="decimal" placeholder="Özel tutar (₺10 – ₺10.000)" oninput="setCustomAmount(this.value)"></div>
+        <label class="lbl">Ödeme Yöntemi</label>
+        <div class="methods">
+          <div class="method active" data-method="card" onclick="selectPay(this)"><svg class="ic"><use href="#i-card"/></svg><div><b>Kredi / Banka Kartı</b><small>3D Secure ile anında yüklenir</small></div></div>
+          <div class="method" data-method="iban" onclick="selectPay(this)"><svg class="ic"><use href="#i-bank"/></svg><div><b>Havale / EFT</b><small>Açıklama kodu ile onaylanır</small></div></div>
         </div>
-        <div class="price-preview-right">
-          <div class="price-per">Birim fiyat</div>
-          <div class="price-per"><strong>₺1.90 / 1000 beğeni</strong></div>
-        </div>
+        <button class="btn btn-gold btn-block" onclick="handleTopup()">Ödemeye Geç</button>
       </div>
-
-      <button class="btn btn-primary btn-order" onclick="handleOrder()">❤️ Şimdi Sipariş Ver</button>
-
-      <div class="order-features">
-        <div class="order-feature"><div class="order-feature-dot"></div><span>Gerçek Türk Kullanıcılar</span></div>
-        <div class="order-feature"><div class="order-feature-dot"></div><span>Anlık Başlama</span></div>
-        <div class="order-feature"><div class="order-feature-dot"></div><span>30 Gün Garanti</span></div>
-        <div class="order-feature"><div class="order-feature-dot"></div><span>7/24 Destek</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<section class="section" id="ozellikler">
-  <div class="section-header">
-    <div class="section-tag">● NEDEN BİZ</div>
-    <h2 class="section-title">FARKIMIZI<br>HİSSEDECEKSİN</h2>
-  </div>
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon fi-red">⚡</div>
-      <div class="feature-title">Anlık Teslimat</div>
-      <div class="feature-text">Siparişin onaylandıktan sonra ortalama 3 saniye içinde işleme başlar. Bekleme süresi yok.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon fi-blue">🔒</div>
-      <div class="feature-title">%100 Güvenli</div>
-      <div class="feature-text">SSL şifreli altyapı, güvenli ödeme sistemleri ve gizlilik politikamızla verilerin tam koruma altında.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon fi-gold">💰</div>
-      <div class="feature-title">En Uygun Fiyat</div>
-      <div class="feature-text">Sektördeki en rekabetçi fiyatlarla kaliteli hizmet. Toplu alımlarda ekstra indirim imkânı.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon fi-green">🔄</div>
-      <div class="feature-title">30 Gün Garanti</div>
-      <div class="feature-text">Satın aldığın tüm hizmetlerde 30 gün dolum garantisi. Düşüş olursa ücretsiz tamamlarız.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon fi-red">👁️</div>
-      <div class="feature-title">Gerçek Hesaplar</div>
-      <div class="feature-text">Bot hesap yok. Gerçek ve aktif Türk kullanıcılardan oluşan kaliteli ağımızla güvenilir büyüme.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon fi-blue">🎧</div>
-      <div class="feature-title">7/24 Destek</div>
-      <div class="feature-text">WhatsApp ve canlı sohbet üzerinden her an ulaşabilirsin. Sorununu dakikalar içinde çözüyoruz.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon fi-gold">📊</div>
-      <div class="feature-title">Sipariş Takibi</div>
-      <div class="feature-text">Panelinizden tüm siparişlerinizi gerçek zamanlı takip edebilirsiniz. Şeffaf raporlama.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon fi-green">🇹🇷</div>
-      <div class="feature-title">Türk Beğeni</div>
-      <div class="feature-text">Sadece gerçek Türk kullanıcı hesaplarından organik görünümlü beğeniler. Hesabınız güvende.</div>
+      <div id="payStage" style="display:none"></div>
     </div>
   </div>
 </section>
 
-<section class="section" id="nasil-calisir">
-  <div class="section-header">
-    <div class="section-tag">● NASIL ÇALIŞIR</div>
-    <h2 class="section-title">4 ADIMDA<br>BÜYÜMEYE BAŞLA</h2>
-  </div>
-  <div class="how-steps">
-    <div class="step-card">
-      <div class="step-title">Üye Ol</div>
-      <div class="step-text">Sağ üstteki "Kayıt Ol" butonuna tıkla. E-posta ve şifren ile saniyeler içinde hesabını oluştur.</div>
+<!-- GEÇMİŞ -->
+<section class="view" data-view="gecmis">
+  <div class="container">
+    <div class="page-head"><h1>Siparişlerim</h1><p>Sipariş, SMS ve bakiye hareketleriniz.</p></div>
+    <div class="tabs" id="histTabs">
+      <div class="tab active" data-h="orders" onclick="showHist('orders')">Siparişler</div>
+      <div class="tab" data-h="sms" onclick="showHist('sms')">SMS Onay</div>
+      <div class="tab" data-h="deposits" onclick="showHist('deposits')">Bakiye Hareketleri</div>
     </div>
-    <div class="step-card">
-      <div class="step-title">Bakiye Yükle</div>
-      <div class="step-text">Kredi kartı (3D Secure) veya banka havalesi/EFT ile güvenli şekilde bakiye yükle.</div>
-    </div>
-    <div class="step-card">
-      <div class="step-title">Link Gir</div>
-      <div class="step-text">Instagram gönderine ait linki gir, beğeni miktarını belirle ve siparişini oluştur.</div>
-    </div>
-    <div class="step-card">
-      <div class="step-title">Büyü!</div>
-      <div class="step-text">Siparişin anında işleme girer. Panelinizden ilerlemeyi canlı olarak takip et.</div>
-    </div>
+    <div class="table-wrap"><table class="tbl"><thead id="histHead"></thead><tbody id="histBody"></tbody></table></div>
   </div>
 </section>
+</main>
 
-<section class="section" id="yorumlar">
-  <div class="section-header">
-    <div class="section-tag">● YORUMLAR</div>
-    <h2 class="section-title">MÜŞTERİLERİMİZ<br>NE DİYOR</h2>
-  </div>
-  <div class="testimonials">
-    <div class="testi-card">
-      <div class="testi-stars">★★★★★</div>
-      <div class="testi-text">ZeroDijitalMarket ile Instagram gönderim 500 Türk beğeni aldı. Hesabım etkilenmedi, süper hızlı geldi!</div>
-      <div class="testi-author">
-        <div class="testi-avatar">AK</div>
-        <div><div class="testi-name">Ahmet Kaya</div><div class="testi-handle">@ahmet_kaya</div></div>
-      </div>
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div><a class="brand" href="#/"><img src="assets/z-mark.png" alt=""><span>ZeroMarket<em>TR</em></span></a><p>Dijital hizmetler ve sosyal medya çözümleri. Hızlı · Güvenilir · Uygun.</p></div>
+      <div><h4>Hizmetler</h4><a href="#/siparis">Yeni Sipariş</a><a href="#/servisler">Servis Listesi</a><a href="#/sms">SMS Onay</a></div>
+      <div><h4>Hesap</h4><a href="#/bakiye">Bakiye Yükle</a><a href="#/gecmis">Siparişlerim</a><a href="#" onclick="openModal('auth');switchTab('login');return false">Giriş Yap</a></div>
+      <div><h4>Destek</h4><a href="#" id="waLink" style="display:none" target="_blank" rel="noopener">WhatsApp</a><a href="#" id="tgLink" style="display:none" target="_blank" rel="noopener">Telegram</a><a href="#/">Gizlilik Politikası</a><a href="#/">Kullanım Şartları</a></div>
     </div>
-    <div class="testi-card">
-      <div class="testi-stars">★★★★★</div>
-      <div class="testi-text">Aldığım beğeni paketi beklediğimden çok daha hızlı geldi. Fiyat performans açısından sektörün en iyisi.</div>
-      <div class="testi-author">
-        <div class="testi-avatar">ZD</div>
-        <div><div class="testi-name">Zeynep Demir</div><div class="testi-handle">@zeynep_content</div></div>
-      </div>
-    </div>
-    <div class="testi-card">
-      <div class="testi-stars">★★★★★</div>
-      <div class="testi-text">İşletme sayfam için aldığım beğeni paketi tam beklediğim gibi çalıştı. Müşteri desteği de çok yardımsever.</div>
-      <div class="testi-author">
-        <div class="testi-avatar">ME</div>
-        <div><div class="testi-name">Mert Erdoğan</div><div class="testi-handle">@mert_dijital</div></div>
-      </div>
-    </div>
-    <div class="testi-card">
-      <div class="testi-stars">★★★★☆</div>
-      <div class="testi-text">30 gün garanti özelliği gerçekten işe yarıyor. Beğeniler organik görünümlü ve kalıcı.</div>
-      <div class="testi-author">
-        <div class="testi-avatar">SY</div>
-        <div><div class="testi-name">Selin Yıldız</div><div class="testi-handle">@selinvlogs</div></div>
-      </div>
-    </div>
-    <div class="testi-card">
-      <div class="testi-stars">★★★★★</div>
-      <div class="testi-text">Birkaç aydır kullanıyorum, her siparişim eksiksiz geldi. Bakiye yükleme de çok kolay ve hızlı.</div>
-      <div class="testi-author">
-        <div class="testi-avatar">BO</div>
-        <div><div class="testi-name">Burak Öztürk</div><div class="testi-handle">@burak.media</div></div>
-      </div>
-    </div>
-    <div class="testi-card">
-      <div class="testi-stars">★★★★★</div>
-      <div class="testi-text">Türk beğeni paketi 1 saatte tamamlandı. Fiyatlar çok uygun, başka bir yerle kıyaslanamaz.</div>
-      <div class="testi-author">
-        <div class="testi-avatar">NA</div>
-        <div><div class="testi-name">Nil Aydın</div><div class="testi-handle">@nil_influencer</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer id="iletisim">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <a class="nav-logo" href="#" style="margin-bottom:10px;">
-        <div class="logo-icon">Z</div>
-        <span class="logo-text">ZERO<span>DIJITAL</span>MARKET</span>
-      </a>
-      <p>Türkiye'nin en güvenilir Instagram büyüme platformu. Organik Türk beğenilerle hesabını güçlendir.</p>
-      <div style="display:flex;gap:6px;margin-top:10px;"><span class="status-pill">● Sistemler Aktif</span></div>
-    </div>
-    <div class="footer-col">
-      <h4>Hizmetler</h4>
-      <a href="#siparis">Instagram Türk Beğeni</a>
-      <a href="#siparis">Organik Beğeni</a>
-      <a href="#siparis">Hızlı Teslimat</a>
-      <a href="#nasil-calisir">Nasıl Çalışır</a>
-    </div>
-    <div class="footer-col">
-      <h4>Hesap</h4>
-      <a href="#" onclick="openModal('auth');switchTab('register')">Kayıt Ol</a>
-      <a href="#" onclick="openModal('auth');switchTab('login')">Giriş Yap</a>
-      <a href="#" onclick="openModal('balance')">Bakiye Yükle</a>
-      <a href="#">Siparişlerim</a>
-    </div>
-    <div class="footer-col">
-      <h4>Destek</h4>
-      <a href="#">SSS</a>
-      <a href="#">Canlı Destek</a>
-      <a href="#">WhatsApp</a>
-      <a href="#">Gizlilik Politikası</a>
-      <a href="#">Kullanım Şartları</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2025 ZeroDijitalMarket. Tüm hakları saklıdır.</p>
-    <div class="footer-social">
-      <a class="social-btn" href="#">𝕏</a>
-      <a class="social-btn" href="#">in</a>
-      <a class="social-btn" href="#">📷</a>
-    </div>
+    <div class="foot-bottom">© 2026 ZeroMarketTR. Tüm hakları saklıdır.</div>
   </div>
 </footer>
 
-<!-- AUTH MODAL -->
+<!-- GİRİŞ / KAYIT -->
 <div class="modal-overlay" id="authModal">
   <div class="modal">
-    <button class="modal-close" onclick="closeModal('auth')">✕</button>
-    <div class="modal-logo">ZERO<span>DIJITAL</span>MARKET</div>
-    <div class="modal-sub">Sosyal medyada gücünü artır</div>
+    <button class="modal-close" onclick="closeModal('auth')" aria-label="Kapat">&times;</button>
+    <div class="modal-brand"><img src="assets/z-mark.png" alt="ZeroMarketTR"></div>
     <div class="modal-tabs">
       <button class="modal-tab active" id="loginTab" onclick="switchTab('login')">Giriş Yap</button>
       <button class="modal-tab" id="registerTab" onclick="switchTab('register')">Kayıt Ol</button>
     </div>
-
     <div class="form-panel active" id="loginPanel">
-      <div class="form-group-m">
-        <label class="form-label-m">E-posta Adresi</label>
-        <input class="form-input-m" type="email" id="loginEmail" placeholder="ornek@email.com">
-        <div class="error-msg" id="loginEmailErr">Geçerli bir e-posta giriniz.</div>
-      </div>
-      <div class="form-group-m">
-        <label class="form-label-m">Şifre</label>
-        <input class="form-input-m" type="password" id="loginPassword" placeholder="••••••••">
-        <div class="error-msg" id="loginPassErr">Şifre en az 6 karakter olmalıdır.</div>
-      </div>
-      <div class="error-msg" id="loginGenErr" style="text-align:center;margin-bottom:8px;"></div>
-      <button class="btn btn-primary btn-form" onclick="handleLogin()">Giriş Yap</button>
-      <div class="form-footer-m"><a href="#">Şifremi Unuttum</a></div>
+      <div class="field"><label class="lbl">E-posta</label><input class="input" type="email" id="loginEmail" placeholder="ornek@email.com"><div class="err-msg" id="loginEmailErr">Geçerli bir e-posta giriniz.</div></div>
+      <div class="field"><label class="lbl">Şifre</label><input class="input" type="password" id="loginPassword" placeholder="Şifreniz"><div class="err-msg" id="loginPassErr">Şifre en az 6 karakter olmalıdır.</div></div>
+      <div class="err-msg" id="loginGenErr" style="text-align:center;margin-bottom:10px"></div>
+      <button class="btn btn-gold btn-block" onclick="handleLogin()">Giriş Yap</button>
     </div>
-
     <div class="form-panel" id="registerPanel">
-      <div class="form-group-m">
-        <label class="form-label-m">Ad Soyad</label>
-        <input class="form-input-m" type="text" id="regName" placeholder="Adınız Soyadınız">
-        <div class="error-msg" id="regNameErr">Ad Soyad en az 2 karakter olmalıdır.</div>
-      </div>
-      <div class="form-group-m">
-        <label class="form-label-m">E-posta Adresi</label>
-        <input class="form-input-m" type="email" id="regEmail" placeholder="ornek@email.com">
-        <div class="error-msg" id="regEmailErr">Geçerli bir e-posta giriniz.</div>
-      </div>
-      <div class="form-group-m">
-        <label class="form-label-m">Şifre</label>
-        <input class="form-input-m" type="password" id="regPassword" placeholder="En az 8 karakter">
-        <div class="error-msg" id="regPassErr">Şifre en az 8 karakter olmalıdır.</div>
-      </div>
-      <div class="error-msg" id="regGenErr" style="text-align:center;margin-bottom:8px;"></div>
-      <button class="btn btn-primary btn-form" onclick="handleRegister()">Kayıt Ol</button>
-      <div class="form-footer-m">Kayıt olarak <a href="#">Kullanım Şartları</a>'nı kabul etmiş olursun.</div>
+      <div class="field"><label class="lbl">Ad Soyad</label><input class="input" type="text" id="regName" placeholder="Adınız Soyadınız"><div class="err-msg" id="regNameErr">Ad Soyad en az 2 karakter olmalıdır.</div></div>
+      <div class="field"><label class="lbl">E-posta</label><input class="input" type="email" id="regEmail" placeholder="ornek@email.com"><div class="err-msg" id="regEmailErr">Geçerli bir e-posta giriniz.</div></div>
+      <div class="field"><label class="lbl">Şifre</label><input class="input" type="password" id="regPassword" placeholder="En az 8 karakter"><div class="err-msg" id="regPassErr">Şifre en az 8 karakter olmalıdır.</div></div>
+      <div class="err-msg" id="regGenErr" style="text-align:center;margin-bottom:10px"></div>
+      <button class="btn btn-gold btn-block" onclick="handleRegister()">Kayıt Ol</button>
+      <div class="form-foot">Kayıt olarak Kullanım Şartları'nı kabul etmiş olursunuz.</div>
     </div>
-  </div>
-</div>
-
-<!-- BALANCE MODAL -->
-<div class="modal-overlay" id="balanceModal">
-  <div class="modal balance-modal">
-    <button class="modal-close" onclick="closeModal('balance')">✕</button>
-    <div class="modal-logo">BAKİYE <span>YÜKLE</span></div>
-    <div class="balance-amount" id="modalBalance">₺0.00</div>
-    <div class="balance-label">Mevcut Bakiyeniz</div>
-    <div id="payForm">
-    <div class="balance-amounts">
-      <div class="amount-btn" onclick="selectAmount(50, this)">₺50</div>
-      <div class="amount-btn" onclick="selectAmount(100, this)">₺100</div>
-      <div class="amount-btn" onclick="selectAmount(200, this)">₺200</div>
-      <div class="amount-btn" onclick="selectAmount(500, this)">₺500</div>
-      <div class="amount-btn" onclick="selectAmount(1000, this)">₺1.000</div>
-      <div class="amount-btn" onclick="selectAmount(2000, this)">₺2.000</div>
-    </div>
-    <div class="form-group-m">
-      <label class="form-label-m">Özel Tutar (₺)</label>
-      <input class="form-input-m" type="number" id="customAmount" placeholder="Tutar giriniz..." oninput="setCustomAmount(this.value)">
-    </div>
-    <div class="pay-methods">
-      <div class="pay-btn active" data-method="card" onclick="selectPay(this)">💳 Kart (3D Secure)</div>
-      <div class="pay-btn" data-method="iban" onclick="selectPay(this)">🏦 Havale / EFT</div>
-    </div>
-    <button class="btn btn-primary btn-form" onclick="handleTopup()">Ödemeye Geç</button>
-    </div>
-    <div id="payStage" style="display:none"></div>
   </div>
 </div>
 
@@ -375,8 +248,11 @@
 <script src="js/nav.js"></script>
 <script src="js/ui.js"></script>
 <script src="js/auth.js"></script>
-<script src="js/balance.js"></script>
+<script src="js/catalog.js"></script>
 <script src="js/order.js"></script>
+<script src="js/sms.js"></script>
+<script src="js/balance.js"></script>
+<script src="js/history.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

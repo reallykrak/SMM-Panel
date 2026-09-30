@@ -25,7 +25,7 @@ async function load(){
     sessionStorage.setItem('zdm_admin',$('key').value);
     const {deposits,orders}=await call('GET');
     $('dep').innerHTML='<tr><th>Kod</th><th>E-posta</th><th>Tutar</th><th></th></tr>'+deposits.map(d=>`<tr><td>${esc(d.oid)}</td><td>${esc(d.email)}</td><td>₺${(d.amount/100).toFixed(2)}</td><td><button onclick="act('deposit','${esc(d.oid)}','approve')">Onayla</button><button class="r" onclick="act('deposit','${esc(d.oid)}','reject')">Reddet</button></td></tr>`).join('');
-    $('ord').innerHTML='<tr><th>#</th><th>E-posta</th><th>Link</th><th>Adet</th><th></th></tr>'+orders.map(o=>`<tr><td>${o.id}</td><td>${esc(o.email)}</td><td>${esc(o.link)}</td><td>${o.quantity}</td><td><button onclick="act('order',${o.id},'complete')">Tamamlandı</button><button class="r" onclick="act('order',${o.id},'cancel')">İptal+İade</button></td></tr>`).join('');
+    $('ord').innerHTML='<tr><th>#</th><th>E-posta</th><th>Servis / Link</th><th>Adet</th><th></th></tr>'+orders.map(o=>`<tr><td>${o.id}</td><td>${esc(o.email)}</td><td>${esc(o.service_name||'')}<br>${esc(o.link)}</td><td>${o.quantity}</td><td><button onclick="act('order',${o.id},'complete')">Tamamlandı</button><button class="r" onclick="act('order',${o.id},'cancel')">İptal+İade</button></td></tr>`).join('');
   }catch(e){alert(e.message)}
 }
 async function act(type,ref,action){

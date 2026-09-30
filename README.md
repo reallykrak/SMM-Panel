@@ -14,3 +14,10 @@ Vercel (statik site + `/api` serverless) + Neon Postgres + PayTR.
 - Havale/EFT: `/api/deposit` → benzersiz açıklama kodu (ZDMxxxxxx) → müşteri IBAN'a kodla gönderir → admin panelden onaylar.
 - Kart bilgisi asla sitenizden geçmez (PayTR barındırır) → PCI yükünüz yok.
 - Siparişler `pending` düşer; sağlayıcıya iletim (SMM API) henüz bağlı değil.
+
+## Sonraki sürüm notları
+- Servis/fiyat düzenleme: `api/_lib/catalog.js` (fiyatlar kuruş / 1000 adet). SMS fiyatları aynı dosyada.
+- SMS Onay: 5sim hesabı aç, `SMS_API_KEY` gir. Kod gelmezse kullanıcı iptal edip otomatik iade alır.
+- Destek linkleri: `js/config.js` (WHATSAPP, TELEGRAM).
+- DB'yi güncellemek için `db/schema.sql` dosyasını tekrar çalıştır (güvenli).
+- Siparişler `pending` düşer; tedarikçiye iletim admin panelinden elle yapılır (`/admin.html`).
